@@ -4,6 +4,7 @@ import logo from "./HappyHippo.svg";
 import Grid from "@material-ui/core/Grid";
 import Typography from "./Typography";
 
+import ParagraphEntry from "./ParagraphEntry";
 import BackgroundBox from "./BackgroundBox";
 import SelectEmployee from "./SelectEmployee";
 
@@ -37,6 +38,12 @@ const GoodVibes = () => {
                 </Grid>
                 <Grid item>
                   <SelectEmployee />
+                </Grid>
+                <Grid item>
+                  <Typography>Write a positive message!</Typography>
+                </Grid>
+                <Grid item>
+                  <ParagraphEntry />
                 </Grid>
               </Grid>
             </form>
