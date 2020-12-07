@@ -31,7 +31,7 @@ const GoodVibes = () => {
     { id: "employee-102", name: "Leroy Syndrome" },
   ];
 
-  const name = employees.find((x) => x.id === employeeId.name) || "";
+  const name = employees.find((x) => x.id === employeeId).name || "";
 
   const handleSubmit = () => {
     setShowSnackBar(true);
