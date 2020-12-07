@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import logo from "./HappyHippo.svg";
 import Grid from "@material-ui/core/Grid";
+import Typography from "./Typography";
 
 import BackgroundBox from "./BackgroundBox";
 import SelectEmployee from "./SelectEmployee";
@@ -12,9 +13,6 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
       width: "25ch",
     },
-  },
-  span: {
-    color: "white",
   },
 }));
 
@@ -35,7 +33,7 @@ const GoodVibes = () => {
             <form className={classes.root}>
               <Grid container spacing={15} direction="column">
                 <Grid item>
-                  <span className={classes.span}>Message a coworker!</span>
+                  <Typography>Message a coworker!</Typography>
                 </Grid>
                 <Grid item>
                   <SelectEmployee />
