@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import logo from "./HappyHippo.svg";
 
 import Box from "./Box";
+import BackgroundBox from "./BackgroundBox";
 import Button from "./Button";
 
 const HomePage = () => {
@@ -20,7 +21,9 @@ const HomePage = () => {
           <Box />
         </Grid>
         <Grid item>
-          <Button />
+          <BackgroundBox>
+            <Button />
+          </BackgroundBox>
         </Grid>
       </Grid>
     </>
