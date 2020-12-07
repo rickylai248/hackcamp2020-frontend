@@ -1,4 +1,5 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import history from "./history";
 
@@ -13,7 +14,16 @@ import Box from "./Box";
 import BackgroundBox from "./BackgroundBox";
 import Button from "./Button";
 
+const useStyles = makeStyles(() => ({
+  happy: {
+    backgroundColor: "#FFD9AC",
+    border: "3px solid #FEA53F",
+  },
+}));
+
 const HomePage = () => {
+  const classes = useStyles();
+
   return (
     <>
       <Grid container spacing={15} direction="column">
@@ -40,6 +50,7 @@ const HomePage = () => {
                       event.preventDefault();
                       history.push("/goodVibes");
                     }}
+                    classes={{ root: classes.happy }}
                   >
                     Happy
                     <img src={happy} alt="happy" />
