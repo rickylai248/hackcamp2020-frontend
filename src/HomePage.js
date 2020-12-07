@@ -11,9 +11,12 @@ const HomePage = () => {
     <>
       <Grid container spacing={15} direction="column">
         <Grid item>
-          <img src={logo} className="App-logo" alt="logo" />;
+          <img src={logo} className="App-logo" alt="logo" />
         </Grid>
         <Grid item>
+          {
+            // Add Grid code here}
+          }
           <Box />
         </Grid>
         <Grid item>
