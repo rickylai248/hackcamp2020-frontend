@@ -23,12 +23,31 @@ const HomePage = () => {
         </Grid>
         <Grid item>
           <BackgroundBox>
-            <Button
-              onClick={(event) => {
-                event.preventDefault();
-                history.push("/goodVibes");
-              }}
-            />
+            <Grid container spacing={15} direction="column">
+              <Grid container spacing={15} direction="row">
+                <Grid item>
+                  <Button
+                    onClick={(event) => {
+                      event.preventDefault();
+                      history.push("/goodVibes");
+                    }}
+                  >
+                    Happy
+                  </Button>
+                </Grid>
+                <Grid item>
+                  {
+                    // Add onClick event to Button
+                  }
+                  <Button>Sad</Button>
+                </Grid>
+                <Grid container spacing={15} direction="row">
+                  {
+                    // Add grid items and other buttons
+                  }
+                </Grid>
+              </Grid>
+            </Grid>
           </BackgroundBox>
         </Grid>
       </Grid>

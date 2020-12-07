@@ -1,8 +1,8 @@
 import React from "react";
 import MuiButton from "@material-ui/core/Button";
 
-const Button = ({ ...other }) => {
-  return <MuiButton {...other}>clickme</MuiButton>;
+const Button = ({ children, ...other }) => {
+  return <MuiButton {...other}>{children}</MuiButton>;
 };
 
 export default Button;
