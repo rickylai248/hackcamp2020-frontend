@@ -1,5 +1,6 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
+import history from "./history";
 
 import logo from "./HappyHippo.svg";
 
@@ -22,7 +23,12 @@ const HomePage = () => {
         </Grid>
         <Grid item>
           <BackgroundBox>
-            <Button />
+            <Button
+              onClick={(event) => {
+                event.preventDefault();
+                history.push("/goodVibes");
+              }}
+            />
           </BackgroundBox>
         </Grid>
       </Grid>
