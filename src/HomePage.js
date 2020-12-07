@@ -2,6 +2,7 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import history from "./history";
 
+import hippo from "./hippo.svg";
 import logo from "./HappyHippo.svg";
 import calm from "./calm.svg";
 import depressed from "./depressed.svg";
@@ -19,12 +20,16 @@ const HomePage = () => {
         <Grid item>
           <img src={logo} className="App-logo" alt="logo" />
         </Grid>
-        <Grid item>
-          {
-            // Add Grid code here}
-          }
-          <Box />
+
+        <Grid container item spacing={2} direction="row" alignItems="center">
+          <Grid item>
+            <Box />
+          </Grid>
+          <Grid item>
+            <img src={hippo} className="App-logo" alt="hippo" />
+          </Grid>
         </Grid>
+
         <Grid item>
           <BackgroundBox>
             <Grid container spacing={15} direction="column">
@@ -37,7 +42,7 @@ const HomePage = () => {
                     }}
                   >
                     Happy
-                    <img src={happy}  />
+                    <img src={happy} />
                   </Button>
                 </Grid>
                 <Grid item>
@@ -45,31 +50,32 @@ const HomePage = () => {
                     // Add onClick event to Button
                   }
                   <Button
-                  onClick={(event) => {
-                    event.preventDefault();
-                    history.push("/goodVibes");
-                  }}
-
-                  >Calm
-                  <img src={calm}  /></Button>
-                  <Button
-                   onClick={(event) => {
+                    onClick={(event) => {
                       event.preventDefault();
-                    /*  history.push("/goodVibes");*/
+                      history.push("/goodVibes");
                     }}
-                   > 
-                    Depresssed
-                    <img src={depressed}  />
+                  >
+                    Calm
+                    <img src={calm} />
                   </Button>
-                  
                   <Button
-                   onClick={(event) => {
+                    onClick={(event) => {
                       event.preventDefault();
-                    /*  history.push("/goodVibes");*/
+                      /*  history.push("/goodVibes");*/
                     }}
-                    >
+                  >
+                    Depresssed
+                    <img src={depressed} />
+                  </Button>
+
+                  <Button
+                    onClick={(event) => {
+                      event.preventDefault();
+                      /*  history.push("/goodVibes");*/
+                    }}
+                  >
                     Stressed
-                    <img src={stressed}  />
+                    <img src={stressed} />
                   </Button>
                 </Grid>
                 <Grid container spacing={15} direction="row">

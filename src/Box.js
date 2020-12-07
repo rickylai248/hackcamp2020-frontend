@@ -4,7 +4,7 @@ import MuiBox from "@material-ui/core/Box";
 const Box = () => {
   return (
     <MuiBox
-      width="25%"
+      width="100%"
       color="grey"
       bgcolor="grey.300"
       fontSize={{ xs: "h6.fontSize", sm: "h4.fontSize", md: "h3.fontSize" }}
