@@ -1,19 +1,17 @@
 import React from "react";
 import MuiBox from "@material-ui/core/Box";
 
-const Box = () => {
+const Box = ({ children }) => {
   return (
     <MuiBox
-      width="100%"
+      width={500}
       color="grey"
       bgcolor="grey.300"
       fontSize={{ xs: "h6.fontSize", sm: "h4.fontSize", md: "h3.fontSize" }}
       p={{ xs: 2, sm: 3, md: 4 }}
-      borderRadius="20%"
-      borderRadius="borderRadius"
       borderRadius={16}
     >
-      Hello, Alex How are you feeling today?
+      {children}
     </MuiBox>
   );
 };
