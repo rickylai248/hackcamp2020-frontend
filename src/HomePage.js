@@ -3,6 +3,9 @@ import Grid from "@material-ui/core/Grid";
 import history from "./history";
 
 import logo from "./HappyHippo.svg";
+import calm from "./calm.svg";
+import depressed from "./depressed.svg";
+import stressed from "./stressed.svg";
 
 import Box from "./Box";
 import BackgroundBox from "./BackgroundBox";
