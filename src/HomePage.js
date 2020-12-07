@@ -42,7 +42,7 @@ const HomePage = () => {
                     }}
                   >
                     Happy
-                    <img src={happy} />
+                    <img src={happy} alt="happy" />
                   </Button>
                 </Grid>
                 <Grid item>
@@ -56,7 +56,7 @@ const HomePage = () => {
                     }}
                   >
                     Calm
-                    <img src={calm} />
+                    <img src={calm} alt="calm" />
                   </Button>
                   <Button
                     onClick={(event) => {
@@ -65,7 +65,7 @@ const HomePage = () => {
                     }}
                   >
                     Depresssed
-                    <img src={depressed} />
+                    <img src={depressed} alt="depressed" />
                   </Button>
 
                   <Button
@@ -75,7 +75,7 @@ const HomePage = () => {
                     }}
                   >
                     Stressed
-                    <img src={stressed} />
+                    <img src={stressed} alt="stressed" />
                   </Button>
                 </Grid>
                 <Grid container spacing={15} direction="row">
