@@ -1,7 +1,9 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import logo from "./HappyHippo.svg";
 import Grid from "@material-ui/core/Grid";
 
+import BackgroundBox from "./BackgroundBox";
 import SelectEmployee from "./SelectEmployee";
 
 const useStyles = makeStyles((theme) => ({
@@ -11,6 +13,9 @@ const useStyles = makeStyles((theme) => ({
       width: "25ch",
     },
   },
+  span: {
+    color: "white",
+  },
 }));
 
 const GoodVibes = () => {
@@ -19,14 +24,25 @@ const GoodVibes = () => {
     <>
       <Grid container spacing={15} direction="column">
         <Grid item>
+          <img src={logo} className="App-logo" alt="logo" />
+        </Grid>
+        <Grid item>
           Yay, I am glad that you are feeling good. Let's share this positive
           vibe with others.
         </Grid>
         <Grid item>
-          <form className={classes.root}>
-            {" "}
-            <SelectEmployee />
-          </form>
+          <BackgroundBox>
+            <form className={classes.root}>
+              <Grid container spacing={15} direction="column">
+                <Grid item>
+                  <span className={classes.span}>Message a coworker!</span>
+                </Grid>
+                <Grid item>
+                  <SelectEmployee />
+                </Grid>
+              </Grid>
+            </form>
+          </BackgroundBox>
         </Grid>
       </Grid>
     </>

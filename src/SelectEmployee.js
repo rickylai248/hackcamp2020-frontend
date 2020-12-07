@@ -18,7 +18,11 @@ const SelectEmployee = () => {
   };
 
   return (
-    <Select value={employeeId} onChange={handleChange}>
+    <Select
+      value={employeeId}
+      onChange={handleChange}
+      defaultValue="Select name..."
+    >
       {employees.map((employee) => (
         <MenuItem key={employee.id} value={employee.id}>
           {employee.name}
