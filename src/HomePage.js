@@ -6,6 +6,7 @@ import logo from "./HappyHippo.svg";
 import calm from "./calm.svg";
 import depressed from "./depressed.svg";
 import stressed from "./stressed.svg";
+import happy from "./happy.svg";
 
 import Box from "./Box";
 import BackgroundBox from "./BackgroundBox";
@@ -36,6 +37,7 @@ const HomePage = () => {
                     }}
                   >
                     Happy
+                    <img src={happy}  />
                   </Button>
                 </Grid>
                 <Grid item>
@@ -48,7 +50,8 @@ const HomePage = () => {
                     history.push("/goodVibes");
                   }}
 
-                  >Sad</Button>
+                  >Calm
+                  <img src={calm}  /></Button>
                   <Button
                    onClick={(event) => {
                       event.preventDefault();
@@ -56,6 +59,7 @@ const HomePage = () => {
                     }}
                    > 
                     Depresssed
+                    <img src={depressed}  />
                   </Button>
                   
                   <Button
@@ -65,6 +69,7 @@ const HomePage = () => {
                     }}
                     >
                     Stressed
+                    <img src={stressed}  />
                   </Button>
                 </Grid>
                 <Grid container spacing={15} direction="row">
