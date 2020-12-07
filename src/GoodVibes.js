@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Snackbar from "@material-ui/core/Snackbar";
-import logo from "./HappyHippo.svg";
+
 import Grid from "@material-ui/core/Grid";
 import Typography from "./Typography";
 
+import hippo from "./hippo.svg";
+import logo from "./HappyHippo.svg";
+
+import Box from "./Box";
 import ParagraphEntry from "./ParagraphEntry";
 import BackgroundBox from "./BackgroundBox";
 import SelectEmployee from "./SelectEmployee";
@@ -43,10 +47,19 @@ const GoodVibes = () => {
         <Grid item>
           <img src={logo} className="App-logo" alt="logo" />
         </Grid>
-        <Grid item>
-          Yay, I am glad that you are feeling good. Let's share this positive
-          vibe with others.
+
+        <Grid container item spacing={2} direction="row" alignItems="center">
+          <Grid item>
+            <Box>
+              Yay, I am glad that you are feeling good. Let's share this
+              positive vibe with others.
+            </Box>
+          </Grid>
+          <Grid item>
+            <img src={hippo} className="App-logo" alt="hippo" />
+          </Grid>
         </Grid>
+
         <Grid item>
           <BackgroundBox>
             <form className={classes.root}>

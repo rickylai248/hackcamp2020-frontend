@@ -23,7 +23,7 @@ const HomePage = () => {
 
         <Grid container item spacing={2} direction="row" alignItems="center">
           <Grid item>
-            <Box />
+            <Box>Hello, Alex How are you feeling today?</Box>
           </Grid>
           <Grid item>
             <img src={hippo} className="App-logo" alt="hippo" />
