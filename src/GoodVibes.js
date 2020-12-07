@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
       width: "25ch",
     },
   },
+  send: {
+    backgroundColor: "#FFD600",
+  },
 }));
 
 const GoodVibes = () => {
@@ -82,6 +85,7 @@ const GoodVibes = () => {
                   event.preventDefault();
                   handleSubmit();
                 }}
+                classes={{ root: classes.send }}
               >
                 Send
               </Button>

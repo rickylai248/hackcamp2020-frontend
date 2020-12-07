@@ -19,6 +19,18 @@ const useStyles = makeStyles(() => ({
     backgroundColor: "#FFD9AC",
     border: "3px solid #FEA53F",
   },
+  calm: {
+    backgroundColor: "#EBD4F4",
+    border: "3px solid #D499EB",
+  },
+  depressed: {
+    backgroundColor: "#CCD3FA",
+    border: "3px solid #526AF0",
+  },
+  stressed: {
+    background: "#DCFFCA",
+    border: "3px solid #8CD167",
+  },
 }));
 
 const HomePage = () => {
@@ -65,6 +77,7 @@ const HomePage = () => {
                       event.preventDefault();
                       history.push("/goodVibes");
                     }}
+                    classes={{ root: classes.calm }}
                   >
                     Calm
                     <img src={calm} alt="calm" />
@@ -74,6 +87,7 @@ const HomePage = () => {
                       event.preventDefault();
                       /*  history.push("/goodVibes");*/
                     }}
+                    classes={{ root: classes.depressed }}
                   >
                     Depresssed
                     <img src={depressed} alt="depressed" />
@@ -84,6 +98,7 @@ const HomePage = () => {
                       event.preventDefault();
                       /*  history.push("/goodVibes");*/
                     }}
+                    classes={{ root: classes.stressed }}
                   >
                     Stressed
                     <img src={stressed} alt="stressed" />
