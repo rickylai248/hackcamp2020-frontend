@@ -1,15 +1,19 @@
-import logo from "./HappyHippo.svg";
-import "./App.css";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Box from "./Box";
-import Button from "./Button";
+import HomePage from "./HomePage";
+import GoodVibes from "./GoodVibes";
+
+import "./App.css";
 
 function App() {
   return (
     <>
-      <img src={logo} className="App-logo" alt="logo" />;
-      <Box />
-      <Button />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/goodVibes" component={GoodVibes} />
+        </Switch>
+      </BrowserRouter>
     </>
   );
 }
