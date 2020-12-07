@@ -1,13 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-import BuildingBlock from "./BuildingBlock";
+import Box from "./Box";
 
 function App() {
   return (
     <>
       <img src={logo} className="App-logo" alt="logo" />;
-      <BuildingBlock />
+      <Box />
     </>
   );
 }
