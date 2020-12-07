@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
   },
   send: {
     backgroundColor: "#FFD600",
+    "&:hover": {
+      backgroundColor: "#FFD600",
+    },
   },
 }));
 

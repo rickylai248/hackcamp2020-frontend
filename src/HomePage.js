@@ -18,18 +18,30 @@ const useStyles = makeStyles(() => ({
   happy: {
     backgroundColor: "#FFD9AC",
     border: "3px solid #FEA53F",
+    "&:hover": {
+      backgroundColor: "#FFD9AC",
+    },
   },
   calm: {
     backgroundColor: "#EBD4F4",
     border: "3px solid #D499EB",
+    "&:hover": {
+      backgroundColor: "#EBD4F4",
+    },
   },
   depressed: {
     backgroundColor: "#CCD3FA",
     border: "3px solid #526AF0",
+    "&:hover": {
+      backgroundColor: "#CCD3FA",
+    },
   },
   stressed: {
-    background: "#DCFFCA",
+    backgroundColor: "#DCFFCA",
     border: "3px solid #8CD167",
+    "&:hover": {
+      backgroundColor: "#DCFFCA",
+    },
   },
 }));
 
