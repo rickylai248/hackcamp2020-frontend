@@ -42,7 +42,30 @@ const HomePage = () => {
                   {
                     // Add onClick event to Button
                   }
-                  <Button>Sad</Button>
+                  <Button
+                  onClick={(event) => {
+                    event.preventDefault();
+                    history.push("/goodVibes");
+                  }}
+
+                  >Sad</Button>
+                  <Button
+                   onClick={(event) => {
+                      event.preventDefault();
+                    /*  history.push("/goodVibes");*/
+                    }}
+                   > 
+                    Depresssed
+                  </Button>
+                  
+                  <Button
+                   onClick={(event) => {
+                      event.preventDefault();
+                    /*  history.push("/goodVibes");*/
+                    }}
+                    >
+                    Stressed
+                  </Button>
                 </Grid>
                 <Grid container spacing={15} direction="row">
                   {
