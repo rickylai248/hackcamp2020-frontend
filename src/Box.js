@@ -4,7 +4,7 @@ import MuiBox from "@material-ui/core/Box";
 const Box = () => {
   return (
     <MuiBox
-      width={50}
+      width="25%"
       color="grey"
       bgcolor="grey.300"
       fontSize={{ xs: "h6.fontSize", sm: "h4.fontSize", md: "h3.fontSize" }}
@@ -13,7 +13,7 @@ const Box = () => {
       borderRadius="borderRadius"
       borderRadius={16}
     >
-      HappyHippo! TEXT
+      Hello, Alex How are you feeling today?
     </MuiBox>
   );
 };
