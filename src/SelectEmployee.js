@@ -4,7 +4,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 
 import Select from "./Select";
 
-const SelectEmployee = () => {
+const SelectEmployee = ({ onChange }) => {
   const [employeeId, setEmployeeId] = useState("");
 
   const employees = [
@@ -15,6 +15,7 @@ const SelectEmployee = () => {
 
   const handleChange = (event) => {
     setEmployeeId(event.target.value);
+    onChange(event.target.value);
   };
 
   return (

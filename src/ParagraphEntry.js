@@ -10,12 +10,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const ParagraphEntry = ({ value, ...other }) => {
+const ParagraphEntry = ({ value, onChange, ...other }) => {
   const classes = useStyles();
+
+  const handleChange = () => {
+    onChange(value);
+  };
 
   return (
     <MuiTextField
       classes={{ root: classes.root }}
+      onChange={handleChange}
       multiline
       rows={4}
       value={value}
