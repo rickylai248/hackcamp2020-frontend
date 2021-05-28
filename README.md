@@ -1,3 +1,5 @@
+For this project, we are aware of the large number of mental health issues in the workplace. For instance, a research report by the Conference Board found that 52.3% of Americans were unhappy at work. Thus, we created this application to address this prevalent concern.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
