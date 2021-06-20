@@ -1,6 +1,6 @@
 For this project, we are aware of the large number of mental health issues in the workplace. For instance, a research report by the Conference Board found that 52.3% of Americans were unhappy at work. Thus, we created this application to address this prevalent concern.
 
-HappyHippo, engaging and simplistic by design, encourages its users to conduct periodic check-ins into the app. These check-ins aim to give the user attention on how they are feeling, uplifting them to feel happier if they are feeling down, and can de-stress themselves through catered, guided breathing and yoga exercises. Moreover, this application aims to promote workplace wellness by allowing users to share positive messages to other coworkers!
+HappyHippo, engaging and simplistic by design, encourages its users to conduct periodic check-ins into the app. These check-ins aim to give the user attention on how they are feeling, uplifting them to feel happier if they are feeling down, and can de-stress themselves through catered, guided breathing and yoga exercises. Moreover, this application aims to promote workplace wellness by allowing users to share positive messages to other coworkers.
 
 ![image](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/306/189/datas/original.png)
 
